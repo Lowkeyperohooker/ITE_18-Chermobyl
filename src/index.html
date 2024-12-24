@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploration and Reactor</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!-- Landing Page -->
+    <div class="landing-page">
+        <div class="overlay"></div>
+        <h1>Welcome to the Chernobyl Experience</h1>
+        <p1></p1>
+        <button id="explore-button">Explore</button>
+        <button id="watch-this-button">Watch This</button>
+    </div>
+
+    <!-- Explore Page -->
+    <div class="explore-page" style="display: none;">
+        <h2>Exploring Chernobyl</h2>
+        <button id="reactor4-button">Reactor 4</button>
+        <button id="military-base-button">Military Base</button>
+        <button id="ferris-wheel-button">Ferris Wheel</button>
+        <button id="apartment-building-button">Apartment Building</button>
+        <button id="worker-quarter-button">Worker's Quarters</button>
+        <canvas class="webgl"></canvas>
+    </div>
+
+    <!-- Reactor Page -->
+    <div class="reactor-page" style="display: none;">
+        <div id="reactor-container">
+            <h2>This is where the whole thing exploded</h2>
+            <button id="explore-button">Explore Chernobyl</button>
+            <button id="military-base-button">Military Base</button>
+            <button id="ferris-wheel-button">Ferris Wheel</button>
+            <button id="apartment-building-button">Apartment Building</button>
+            <button id="worker-quarter-button">Worker's Quarters</button>
+        </div>
+    </div>
+
+    <!-- Apartment Building Page -->
+    <div class="apartment-building-page" style="display: none;">
+        <div id="apartment-building-container">
+            <h2>Apartment Building</h2>
+            <button id="explore-button">Explore Chernobyl</button>
+            <button id="reactor4-button">Reactor 4</button>
+            <button id="military-base-button">Military Base</button>
+            <button id="ferris-wheel-button">Ferris Wheel</button>
+            <button id="worker-quarter-button">Worker's Quarters</button>
+        </div>
+    </div>
+
+    <!-- Ferris Wheel Page -->
+    <div class="ferris-wheel-page" style="display: none;">
+        <div id="ferris-wheel-container">
+            <h2>Ferris Wheel</h2>
+            <button id="explore-button">Explore Chernobyl</button>
+            <button id="reactor4-button">Reactor 4</button>
+            <button id="military-base-button">Military Base</button>
+            <button id="apartment-building-button">Apartment Building</button>
+            <button id="worker-quarter-button">Worker's Quarters</button>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script> 
+</body>
+</html>
