@@ -17,15 +17,17 @@ export default defineConfig({
     emptyOutDir: true,
     sourcemap: true,
     rollupOptions: {
-      // Resolve three/examples/jsm issues
-      external: ['three/examples/jsm/loaders/GLTFLoader.js'], // Treat as external
+      external: [], // Use this if you have additional dependencies to treat as external
     },
   },
   resolve: {
-    resolve: {
-      alias: {
-        'three/examples/jsm': path.resolve(__dirname, 'node_modules/three/examples/jsm'),
-      },
+    alias: {
+      // Ensure correct resolution of three/examples/jsm imports
+      'three/examples/jsm': path.resolve(__dirname, 'node_modules/three/examples/jsm'),
     },
+  },
+  optimizeDeps: {
+    // Ensure dependencies like `three` are pre-bundled correctly
+    include: ['three'],
   },
 });
