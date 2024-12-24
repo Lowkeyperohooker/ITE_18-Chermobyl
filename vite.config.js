@@ -17,12 +17,12 @@ export default defineConfig({
     emptyOutDir: true,
     sourcemap: true,
     rollupOptions: {
-      external: [], // Use this if you have additional dependencies to treat as external
+      external: [], // Add external dependencies here if needed
     },
   },
   resolve: {
     alias: {
-      // Ensure correct resolution of three/examples/jsm imports
+      // Ensure correct resolution of `three/examples/jsm` imports
       'three/examples/jsm': path.resolve(__dirname, 'node_modules/three/examples/jsm'),
     },
   },
