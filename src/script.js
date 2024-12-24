@@ -1,5 +1,7 @@
 import { startExploration } from './exploration.js';
 import { startReactor } from './reactor4.js';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+
 
 // Pages
 const landingPage = document.querySelector('.landing-page');
